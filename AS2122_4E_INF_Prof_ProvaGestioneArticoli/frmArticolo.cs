@@ -24,7 +24,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
         // TODO: (6) aggiungere property di sola lettura dei dati inseriti nella frmArticoli per l'utilizzo in frmMain
         public string Descrizione { get; }
         public string UnitaMisura { get; }
-        double Prezzo { get; }
+        public double Prezzo { get; }
         public frmArticolo()
         {
             InitializeComponent();
@@ -36,12 +36,12 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // ... descrizione, unitaMisura, prezzo
             descrizione = txtDescrizione.Text;
             unitaMisura = cmbUnitaMisura.Text;
-            prezzo = Convert.ToDouble;
+            prezzo = Convert.ToDouble(txtPrezzo.Text);
 
 
-            if (unitaMisura==" " || prezzo=Convert.ToDouble("") || descrizione ==" ")
+            if (unitaMisura==" " || prezzo== Convert.ToDouble("") || descrizione ==" ")
             {
-                MessageBox.Show("i valori devono essere varolizzati")
+                MessageBox.Show("i valori devono essere varolizzati");
             }
 
             status = DialogResult.OK;
